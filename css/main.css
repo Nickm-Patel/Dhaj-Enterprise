@@ -12,12 +12,38 @@ html{
     a{
         text-decoration: none;
     }
-    .header{
+    .first{
         min-height: 100vh;
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
-        
+        justify-content: center;        
 
     }
+#header{
+    background-image: url(../img/herbals.jpg);
+    background-size:cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    }
+#header::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+#header h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color:black;
+}
+#header .cta
+
+
