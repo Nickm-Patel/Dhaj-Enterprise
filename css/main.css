@@ -21,7 +21,7 @@ html{
 
     }
 #header{
-    background-image: url(../img/herbals.jpg);
+    background-image: url(../img/Spices.jpg);
     background-size:cover;
     background-position: top center;
     position: relative;
@@ -34,7 +34,7 @@ html{
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .7;
+    opacity: .3;
     z-index: -1;
 }
 #header h1{
@@ -42,8 +42,59 @@ html{
     width: fit-content;
     font-size: 4rem;
     position: relative;
-    color:black;
+    color: transperent;
+    animation: text_revel_box 1s ease;
+    animation-delay: 1s;
+}
+#header h1 span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+    animation: text_revel_box 1s ease;
+    animation-delay: 1s;
+
 }
 #header .cta
+{
+    display: inline-block;
+    padding:10px 30px;
+    color:crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition:.3s ease;
+    transition-property: background-color, color;
 
+}
+
+#header .cta:hover
+{
+    color: white;
+    background-color: crimson;
+
+}
+
+@keyframes text_revel_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_revel{
+    100%{
+        color:white;
+    }
+}
 
